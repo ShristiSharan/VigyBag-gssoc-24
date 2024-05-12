@@ -1,5 +1,5 @@
 from django.db import models
-from ckeditor.fields import RichTextField
+from ckeditor5.fields import RichTextField
 
 # Create your models here.
 class Color(models.Model):

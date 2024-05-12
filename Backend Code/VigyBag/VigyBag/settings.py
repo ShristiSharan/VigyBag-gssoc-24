@@ -23,6 +23,7 @@ SECRET_KEY = config("SECRET_KEY", default=get_random_secret_key())
 DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="").split(",")
 
+
 # Application definition
 # Application definition
 INSTALLED_APPS = [
@@ -43,7 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.twitter_oauth2',
-    'ckeditor',
+    'ckeditor5',
     # Project-specific Apps
     'base',  # Assuming 'base' is the name of the app directory
     'Product',  # Corrected app name
